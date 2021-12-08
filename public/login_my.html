@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta가 뭘까? -->
+		<meta charset="utf-8">
+		<title>My Voxotron</title>
+	</head>
+	<body>
+
+		<!-- voxotron main으로 이동하는 네비게이션바 토글 버튼 -->
+		<button class='navbar-toggle' data-target='.navbar-responsive-collapse' data-toggle='collapse' type='button'>
+			<span class='icon-bar'></span>
+			<span class='icon-bar'></span>
+			<span class='icon-bar'></span>
+		</button>
+		<h1>Voxotron</h1>
+		<!-- from은 뭘까? -->
+		<!-- 여기서 실질적인 Login ID/PW 입력 창과 로그인 버튼이 생성-->
+		<form accept-charset="UTF-8" action="/admins/sign_in" class="simple_form form-horizontal new_admin" id="new_admin" method="post" novalidate="novalidate">
+			<div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="M3iWGazAD4Yw+PYQBCL7k/ReGn5dZin6X1aZkOqf6jw=" /></div><div class='form-inputs'>
+			<div class="form-group placeholdered required admin_login"><div class="col-sm-12"><input autocomplete="off" autofocus="autofocus" class="placeholdered required placeholdered" id="admin_login" name="admin[login]" required="required" type="text" /><label alt='Login' placeholder='Login'></label></div></div>
+			<div class="form-group placeholdered required admin_password"><div class="col-sm-12"><input autocomplete="off" class="placeholdered required placeholdered" id="admin_password" name="admin[password]" required="required" type="password" /><label alt='Password' placeholder='Password'></label></div></div>
+			</div>
+			<div class='form-actions'>
+			<button class='btn btn-block btn-primary' type='submit'>Sign in</button>
+			</div>
+		</form>
+	</body>
+</html>
