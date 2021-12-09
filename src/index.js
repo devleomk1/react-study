@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// ./App.js
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* 요기 App이 컴포넌트! */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')
